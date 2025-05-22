@@ -1,0 +1,7 @@
+services:
+  delete_new_member_notify:
+    container_name: ${CONTAINER_NAME}
+    restart: always
+    build: ./build
+    env_file:
+      - .env
