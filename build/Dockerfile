@@ -4,6 +4,7 @@ FROM node:22-alpine
 ARG APP_DIR=app
 
 RUN mkdir -p ${APP_DIR}
+RUN mkdir -p ${APP_DIR}/config
 WORKDIR ${APP_DIR}
 
 # Установка зависимостей
